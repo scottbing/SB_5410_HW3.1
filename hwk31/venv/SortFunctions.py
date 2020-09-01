@@ -93,6 +93,7 @@ def selectionSort(A, compare):
         # the first element
         A[i], A[min_idx] = A[min_idx], A[i]
 
+
 # This function takes last element as pivot and places
 
 # end of def selectionSort(A, compare):
@@ -129,15 +130,19 @@ def selectionSort(A, compare):
 # #end of selection_sort(array, compare):
 
 def comparePixels(pix1, pix2):
-    return pix1[0] > pix2[0]
+    return pix1[0][0] > pix2[0][0]
 
 
 # end def comparePixels(pix1,pix2):
 
+
 if __name__ == "__main__":
     # main()
-    # two made up pixel tupels
-    px1 = (255, 32, 12)
-    px2 = (128, 255, 255)
+    # two made up pixel tupelsa with rgb, xy
+    px1 = ((255, 32, 12), (0, 10))
+    px2 = ((128, 255, 255), (132, 12))
+    pxls = [px1, px2]
 
-    print(comparePixels(px1, px2))
+    selectionSort(pxls, comparePixels)
+
+    print(pxls)

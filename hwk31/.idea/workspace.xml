@@ -22,9 +22,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SortFunctions">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/venv" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.SB-PillowTests">
     <configuration name="SB-PillowTests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hwk31" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SortFunctions" />
         <item itemvalue="Python.SB-PillowTests" />
+        <item itemvalue="Python.SortFunctions" />
         <item itemvalue="Python.trypil" />
       </list>
     </recent_temporary>
@@ -110,26 +116,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1554" height="245" key="GridCell.Tab.0.bottom" timestamp="1598928064858">
-      <screen x="0" y="23" width="1920" height="991" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom" timestamp="1598969696833">
+      <screen x="0" y="23" width="1920" height="995" />
     </state>
-    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.991@0.23.1920.991" timestamp="1598928064858" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.991@0.23.1920.991" timestamp="1598934739375" />
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.992@0.23.1920.992" timestamp="1598925519698" />
-    <state width="1554" height="245" key="GridCell.Tab.0.center" timestamp="1598928064858">
-      <screen x="0" y="23" width="1920" height="991" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.995@0.23.1920.995" timestamp="1598969696833" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center" timestamp="1598969696832">
+      <screen x="0" y="23" width="1920" height="995" />
     </state>
-    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.991@0.23.1920.991" timestamp="1598928064858" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.991@0.23.1920.991" timestamp="1598934739375" />
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.992@0.23.1920.992" timestamp="1598925519697" />
-    <state width="1554" height="245" key="GridCell.Tab.0.left" timestamp="1598928064857">
-      <screen x="0" y="23" width="1920" height="991" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.995@0.23.1920.995" timestamp="1598969696832" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left" timestamp="1598969696832">
+      <screen x="0" y="23" width="1920" height="995" />
     </state>
-    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.991@0.23.1920.991" timestamp="1598928064857" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.991@0.23.1920.991" timestamp="1598934739375" />
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.992@0.23.1920.992" timestamp="1598925519697" />
-    <state width="1554" height="245" key="GridCell.Tab.0.right" timestamp="1598928064858">
-      <screen x="0" y="23" width="1920" height="991" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.995@0.23.1920.995" timestamp="1598969696832" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right" timestamp="1598969696832">
+      <screen x="0" y="23" width="1920" height="995" />
     </state>
-    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.991@0.23.1920.991" timestamp="1598928064858" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.991@0.23.1920.991" timestamp="1598934739375" />
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.992@0.23.1920.992" timestamp="1598925519698" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.995@0.23.1920.995" timestamp="1598969696832" />
     <state x="468" y="192" key="SettingsEditor" timestamp="1598923316706">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
