@@ -29,3 +29,6 @@ def main():
     im.show()
 #end of def main():
 
+if __name__ == "__main__":
+    main()
+

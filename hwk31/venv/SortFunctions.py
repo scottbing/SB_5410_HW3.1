@@ -39,6 +39,7 @@ def quickSort(arr, low, high):
         quickSort(arr, low, pi - 1)
         quickSort(arr, pi + 1, high)
 
+
 # Recursive Python3 code to sort
 # an array using selection sort
 
@@ -78,31 +79,65 @@ def recurSelectionSort(a, n, index=0):
     recurSelectionSort(a, n, index + 1)
 
 
-def selection_sort(array):
-    # taken from:
-    # https://big-o.io/algorithms/comparison/selection-sort/
-    #print("in selectionsort: ", array)
-    # step 1: loop from the beginning of the array to the second to last item
-    currentIndex = 0
-    while (currentIndex < len(array) - 1):
-        # step 2: save a copy of the currentIndex
-        minIndex = currentIndex
-        # step 3: loop through all indexes that proceed the currentIndex
-        i = currentIndex + 1
-        while (i < len(array)):
-            # step 4:   if the value of the index of the current loop is less
-            #           than the value of the item at minIndex, update minIndex
-            #           with the new lowest value index
-            if (array[i] < array[minIndex]):
-                # update minIndex with the new lowest value index
-                minIndex = i
-            i += 1
-        # step 5: if minIndex has been updated, swap the values at minIndex and currentIndex
-        if (minIndex != currentIndex):
-            temp = array[currentIndex]
-            array[currentIndex] = array[minIndex]
-            array[minIndex] = temp
-        currentIndex += 1
+def selectionSort(A, compare):
+    for i in range(len(A)):
 
-    return array
+        # Find the minimum element in remaining
+        # unsorted array
+        min_idx = i
+        for j in range(i + 1, len(A)):
+            if compare(A[min_idx], A[j]):
+                min_idx = j
 
+        # Swap the found minimum element with
+        # the first element
+        A[i], A[min_idx] = A[min_idx], A[i]
+
+# This function takes last element as pivot and places
+
+# end of def selectionSort(A, compare):
+
+
+# def selection_sort(array, compare):
+#     # taken from:
+#     # https://big-o.io/algorithms/comparison/selection-sort/
+#     #print("in selectionsort: ", array)
+#     # step 1: loop from the beginning of the array to the second to last item
+#     currentIndex = 0
+#     while (currentIndex < len(array) - 1):
+#         # step 2: save a copy of the currentIndex
+#         minIndex = currentIndex
+#         # step 3: loop through all indexes that proceed the currentIndex
+#         i = currentIndex + 1
+#         while (i < len(array)):
+#             # step 4:   if the value of the index of the current loop is less
+#             #           than the value of the item at minIndex, update minIndex
+#             #           with the new lowest value index
+#             if (array[i] < array[minIndex]):
+#                 # update minIndex with the new lowest value index
+#                 minIndex = i
+#             i += 1
+#         # step 5: if minIndex has been updated, swap the values at minIndex and currentIndex
+#         if (minIndex != currentIndex):
+#             temp = array[currentIndex]
+#             array[currentIndex] = array[minIndex]
+#             array[minIndex] = temp
+#         currentIndex += 1
+#
+#     return array
+#
+# #end of selection_sort(array, compare):
+
+def comparePixels(pix1, pix2):
+    return pix1[0] > pix2[0]
+
+
+# end def comparePixels(pix1,pix2):
+
+if __name__ == "__main__":
+    # main()
+    # two made up pixel tupels
+    px1 = (255, 32, 12)
+    px2 = (128, 255, 255)
+
+    print(comparePixels(px1, px2))
