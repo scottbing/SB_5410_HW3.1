@@ -1,15 +1,7 @@
 from PIL import Image, ImageDraw
 from SortFunctions import selectionSort
+from SortFunctions import quickSort
 from SearchFunctions import binarySearchSub
-
-def my_add_fn():
-   print("SUM:%s"%sum(map(int,input("Enter 2 numbers seperated by a space").split())))
-
-def my_quit_fn():
-   raise SystemExit
-
-def invalid():
-   print("INVALID CHOICE!")
 
 
 def comparePixels(pix1, pix2):
@@ -70,7 +62,8 @@ def main():
 
         ### sort copy of pixels ###
         sorted_pixels = pixels.copy()
-        selectionSort(sorted_pixels, comparePixels)
+        #selectionSort(sorted_pixels, comparePixels)
+        quickSort(sorted_pixels, 0, len(sorted_pixels)-1, comparePixels)
         print("sorted")
         sorted_im = pixelsToImage(im, sorted_pixels)
         sorted_im.save('sorted_'+ IMG_NAME + '.jpg', 'JPEG')
@@ -82,12 +75,12 @@ def main():
             command = input("Type a value for red threshold or Q to quit:")
             if(command in ('q', 'Q')):
                 save = input("Save File? (Y|y)")
-                if(save in ('y', 'Y')):
+                if (save in ('y', 'Y')):
                     format = input("which format?  enter '1' for 'JPEG';  '2' for 'PNG'")
-                    if(format == '1'):
+                    if (format == '1'):
                         print("JPEG")
                         im.save('highlighted_' + IMG_NAME + '.jpg', 'JPEG')
-                    elif(format == '2'):
+                    elif (format == '2'):
                         print("PNG")
                         im.save('highlighted_' + IMG_NAME + '.png', 'PNG')
                     else:
@@ -110,6 +103,7 @@ def main():
             # restore found r
             # uses list slice notation to remove any item before subi
             pixelsToPoints(im, sorted_pixels[subi:])
+            #pixelsToPoints(im, sorted_pixels[0:subi])
             im.show()
         #end while(True)
 

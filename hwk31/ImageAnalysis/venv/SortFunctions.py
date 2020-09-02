@@ -6,14 +6,15 @@ import random
 # array, and places all smaller (smaller than pivot)
 # to left of pivot and all greater elements to right
 # of pivot
-def partition(arr, low, high):
+def partition(arr, low, high, compare):
     i = (low - 1)  # index of smaller element
     pivot = arr[high]  # pivot
 
     for j in range(low, high):
 
         # If current element is smaller than the pivot
-        if arr[j] < pivot:
+        #if arr[j] < pivot:
+        if compare(pivot, arr[j]):
             # increment index of smaller element
             i = i + 1
             arr[i], arr[j] = arr[j], arr[i]
@@ -28,16 +29,16 @@ def partition(arr, low, high):
 # high  --> Ending index
 
 # Function to do Quick sort
-def quickSort(arr, low, high):
+def quickSort(arr, low, high, compare):
     if low < high:
         # pi is partitioning index, arr[p] is now
         # at right place
-        pi = partition(arr, low, high)
+        pi = partition(arr, low, high, compare)
 
         # Separately sort elements before
         # partition and after partition
-        quickSort(arr, low, pi - 1)
-        quickSort(arr, pi + 1, high)
+        quickSort(arr, low, pi - 1, compare)
+        quickSort(arr, pi + 1, high, compare)
 
 
 # Recursive Python3 code to sort

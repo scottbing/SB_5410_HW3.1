@@ -90,6 +90,7 @@ def main():
             # restore found r
             # uses list slice notation to remove any item before subi
             pixelsToPoints(im, sorted_pixels[subi:])
+            #pixelsToPoints(im, sorted_pixels[0:subi])
             im.show()
         #end while(True)
 
