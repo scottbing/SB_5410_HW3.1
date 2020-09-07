@@ -1,13 +1,15 @@
 from PIL import Image, ImageDraw
 from SortFunctions import selectionSort
-from SortFunctions import quickSort
+from SortFunctions import quickSortRecursive, quickSortIterative
 from SearchFunctions import binarySearchSub
 from PixelFunctions import *
 
 
 def main():
-    IMG_NAME = 'tinyrose'
-    #IMG_NAME = 'bigrose'
+    #IMG_NAME = 'tinyrose'   #Tiny
+    #IMG_NAME = 'bigrose'   #Medium
+    #IMG_NAME = 'abq'        #Large 500x300
+    IMG_NAME = 'abq_huge'   #Huge 1500x1300
 
     # open image
     # read each pixel into memory as the image object im
@@ -18,7 +20,7 @@ def main():
         ### sort copy of pixels ###
         sorted_pixels = pixels.copy()
         #selectionSort(sorted_pixels, comparePixels)
-        quickSort(sorted_pixels, 0, len(sorted_pixels)-1, comparePixels)
+        quickSortIterative(sorted_pixels, 0, len(sorted_pixels)-1, comparePixels)
         print("sorted")
         sorted_im = pixelsToImage(im, sorted_pixels)
         sorted_im.save('sorted_'+ IMG_NAME + '.jpg', 'JPEG')
